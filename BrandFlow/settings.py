@@ -80,13 +80,13 @@ WSGI_APPLICATION = 'BrandFlow.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'BrandFlow',  
-        'USER': 'root',        
-        'PASSWORD': 'mengarelli22',  
-        'HOST': 'localhost',          
-        'PORT': '3306',               
+        'NAME': 'BrandFlow',
+        'USER': 'admin_dev',
+        'PASSWORD': 'mengarelli22',
+        'HOST': 'localhost',
+        'PORT': '3306',
         'OPTIONS': {
-            'charset': 'utf8mb4',  
+            'charset': 'utf8mb4',
         }
     }
 }

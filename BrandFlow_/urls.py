@@ -3,11 +3,18 @@ from rest_framework import routers
 from BrandFlow_ import views
 
 router = routers.DefaultRouter()
-# router.register(r'Category', views.CategoryView, basename='Category')
 router.register(r'User', views.UserSerializerView, basename='User')
-# router.register(r'Campaigns', views.CampaignView, basename='Campaigns')
-# router.register(r'Orders', views.OrderView, basename='Orders')
-# router.register(r'Campaignuser', views.CampaignUserSerializer, basename='Campaignuser')
+router.register(r'Product', views.ProductSerializerView, basename='Product')
+router.register(r'category', views.CategorySerializerView, basename='category')
+router.register(r'Order', views.OrderSerializerView, basename='Order')
+router.register(r'OrderDetails', views.OrderDetailsSerializerView, basename='OrderDetails')
+# router.register(r'Payment', views.PaymentSerializerView, basename='Payment')
+router.register(r'shoppcart', views.ShoppCartSerializerView, basename='shoppcart') 
+router.register(r'shoppcartdetails', views.ShoppCartDetailsSerializerView, basename='shoppcartdetails') 
+# router.register(r'method_payment', views.method_paymentSerializerView, basename='method_payment')
+router.register(r'Reviews', views.ReviewsSerializerView, basename='Reviews')
+
+
 urlpatterns = [
     path('BrandFlow_/model/', include(router.urls))
 ]
