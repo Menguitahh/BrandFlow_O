@@ -1,3 +1,4 @@
+from django.urls import path, include
 """
 URL configuration for BrandFlow project.
 
@@ -19,4 +20,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('BrandFlow_.urls')),
 ]

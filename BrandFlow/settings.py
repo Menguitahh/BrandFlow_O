@@ -69,6 +69,9 @@ TEMPLATES = [
         },
     },
 ]
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
 
 WSGI_APPLICATION = 'BrandFlow.wsgi.application'
 
@@ -80,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'BrandFlow',  
-        'USER': 'root',        
+        'USER': 'admin_dev',        
         'PASSWORD': 'mengarelli22',  
         'HOST': 'localhost',          
         'PORT': '3306',               
